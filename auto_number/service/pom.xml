@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>billno</artifactId>
+		<groupId>com.zcb.billno</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	
+	<artifactId>billno-service</artifactId>
+	<packaging>pom</packaging>
+	<name>billno-service</name>
+	
+	<modules>
+		<module>dao</module>
+		<module>impl</module>
+		<module>facade</module>
+		<module>war</module>
+	</modules>
+</project>

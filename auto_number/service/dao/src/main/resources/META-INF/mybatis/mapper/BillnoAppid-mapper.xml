@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zcb.billno.service.dao.BillnoAppidDAO">
+	 <parameterMap id="BillnoAppidInput" type="com.zcb.billno.service.dao.model.BillnoAppidDO">
+        <parameter property="appid" jdbcType="VARCHAR" javaType="String" />
+        <parameter property="startNo" jdbcType="INTEGER" javaType="Integer" />
+        <parameter property="memo" jdbcType="VARCHAR" javaType="String" />
+    </parameterMap>
+    
+    <resultMap id="BillnoAppidOutput" type="com.zcb.billno.service.dao.model.BillnoAppidDO">
+        <result property="appid" column="Fappid"  jdbcType="VARCHAR" javaType="String" />
+        <result property="startNo" column="Fstart_no" jdbcType="INTEGER" javaType="Integer" />
+        <result property="memo" column="Fmemo" jdbcType="VARCHAR" javaType="String" />
+    </resultMap>
+
+	<sql id="BillnoAppidFields">
+		Fappid,
+        Fstart_no,
+        Fmemo
+	</sql>
+    <select id="queryBillnoAppid" parameterType="java.lang.String" resultMap="BillnoAppidOutput">
+	    SELECT 
+	        <include refid="BillnoAppidFields" />
+	    FROM com_db.t_billno_appid_config where Fappid = #{appid} 
+    </select>
+ </mapper>
