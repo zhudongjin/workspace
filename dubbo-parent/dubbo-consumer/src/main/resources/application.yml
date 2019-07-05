@@ -1,0 +1,11 @@
+server:
+    port: 8886
+spring:
+  dubbo:
+    application: Consumer
+    registry:
+      address: zookeeper:http://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.gold.common.controller
