@@ -24,7 +24,7 @@
 		<spring.mybatis.version>1.2.3</spring.mybatis.version>
 		<mybatis.version>3.2.8</mybatis.version>
 		<hessian.version>4.0.37</hessian.version>
-		<mysql.connector.version>5.1.34</mysql.connector.version>
+		<mysql.connector.version>8.0.16</mysql.connector.version>
 		<junit.version>4.5</junit.version>
 		<commons.logging.version>1.2</commons.logging.version>
 		<commons.lang.version>3.3.2</commons.lang.version>
