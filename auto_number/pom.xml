@@ -33,7 +33,7 @@
 		<c3p0.version>0.9.1.2</c3p0.version>
 		<commons.logging.version>1.2</commons.logging.version>
 		<commons.lang.version>3.3.2</commons.lang.version>
-		<log4j.version>2.3</log4j.version>
+		<log4j.version>2.16.0</log4j.version>
 		<slf4j.version>1.7.12</slf4j.version>
 	</properties>
 
